@@ -34,7 +34,7 @@ public class Gui extends Application {
 		MenuItem itmNew = new MenuItem("New");
 		MenuItem itmDel = new MenuItem("Delete");
 		MenuItem itmView = new MenuItem("View");
-		MenuItem itmSwitch = new MenuItem("Switch");
+		MenuItem itmLogOut = new MenuItem("Log Out");
 		
 		//Menu2
 		Menu options = new Menu("Options");
@@ -49,7 +49,7 @@ public class Gui extends Application {
 		MenuItem itmChanges = new MenuItem("Changes");
 		
 		//Add MenuItems to Menus
-		file.getItems().addAll(itmNew,itmDel,itmView,itmSwitch);
+		file.getItems().addAll(itmNew,itmDel,itmView,itmLogOut);
 		options.getItems().add(itmCustom);
 		help.getItems().add(itmChanges);
 		
@@ -183,10 +183,12 @@ public class Gui extends Application {
 
 /*Ideas TO-DO
 * Handle Button Actions (IN PROGRESS)
+* Log In Screen
+* Change File Menu Options
 * Sort out this mess of a code (new classes for profile/music tabs) I'm a good coder I swear (IN PROGRESS)
 * Make buttons with images in list view on right of stage
 * Cutomize icons
-* Create CSS
+* Create CSS (IN PROGRESS)
 * Add new popup menu to customize color scheme?
 */
 
