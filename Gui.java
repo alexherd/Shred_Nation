@@ -161,7 +161,7 @@ public class Gui extends Application {
 		
 	}
 
-	//Fix this fucking mess (Do in css)
+	//Fix this fucking mess
 	public void setBtnSizes(){
 		addMusic.setPrefSize(80, 80);
 		editMusic.setPrefSize(80, 80);
