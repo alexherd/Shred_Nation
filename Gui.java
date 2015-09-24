@@ -80,7 +80,6 @@ public class Gui extends Application {
 		rateMusic = new Button("Rate");
 		sortMusic = new Button("Sort");
 				
-		//NEW! Button Event Handlers NEW!
 		//add Event Handlers to buttons
 		addMusic.setOnAction(new AddMusicHandler());
 		editMusic.setOnAction(new EditMusicHandler());
@@ -183,7 +182,7 @@ public class Gui extends Application {
 
 /*Ideas TO-DO
 * Handle Button Actions (IN PROGRESS)
-* Log In Screen
+* Log In Screen (IN PROGRESS)
 * Change File Menu Options
 * Sort out this mess of a code (new classes for profile/music tabs) I'm a good coder I swear (IN PROGRESS)
 * Make buttons with images in list view on right of stage
