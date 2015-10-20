@@ -58,7 +58,7 @@ public class NewAccount extends Application {
 		hbBtns.getChildren().addAll(btnCreate, btnCancel);
 		root.add(hbBtns, 1, 4);
 
-		// Usual Shit
+		// Usual Stuff
 		Scene sceneNew = new Scene(root, 350, 300);
 		primaryStage.setTitle("Shred Nation");
 		primaryStage.setScene(sceneNew);
