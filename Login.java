@@ -52,7 +52,7 @@ public class Login extends Application{
 		root.add(hbBtns, 1, 4);
 		
 		
-		//Usual Shit
+		//Usual Stuff
 		Scene sceneLogin = new Scene(root,350,300);
 		primaryStage.setTitle("Shred Nation");
 		primaryStage.setScene(sceneLogin);

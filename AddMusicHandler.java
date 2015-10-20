@@ -30,7 +30,7 @@ public class AddMusicHandler implements EventHandler<ActionEvent> {
 		} else if (addInput.get() == addAlbum) {
 			// ADD ALBUM PICKED
 		} else {
-			// CANCEL OR CLOSED DIALOG BOX
+			// CANCEL OR CLOSED DIALOG BOX.
 		}
 	}
 }

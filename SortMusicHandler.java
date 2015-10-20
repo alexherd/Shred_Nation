@@ -36,7 +36,7 @@ public class SortMusicHandler implements EventHandler<ActionEvent>{
 			//LOW TO HIGH PICKED
 		}
 		else{
-			//CANCEL OR CLOSED DIALOG BOX
+			//CANCEL OR CLOSED DIALOG BOX?
 		}	
 	}
 }

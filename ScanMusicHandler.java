@@ -14,7 +14,7 @@ public class ScanMusicHandler implements EventHandler<ActionEvent>{
 		dialogScanMusic.setContentText("Directory:");
 		Optional<String> scanInput = dialogScanMusic.showAndWait();
 		if (scanInput.isPresent()){
-			//USE DIRECTORY??
+			//USE DIRECTORY???
 		}
 	}
 }

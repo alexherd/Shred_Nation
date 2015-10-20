@@ -14,7 +14,7 @@ public class EditMusicHandler implements EventHandler<ActionEvent> {
 		dialogEditMusic.setContentText("Album Name:");
 		Optional<String> editInput = dialogEditMusic.showAndWait();
 		if (editInput.isPresent()) {
-			// SEARCH FOR ALBUM??
+			// SEARCH FOR ALBUM???
 		}
 	}
 }

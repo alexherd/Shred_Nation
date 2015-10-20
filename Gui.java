@@ -80,7 +80,7 @@ public class Gui extends Application {
 		rateMusic = new Button("Rate");
 		sortMusic = new Button("Sort");
 				
-		//add Event Handlers to buttons
+		//add Event Handlers to Buttons
 		addMusic.setOnAction(new AddMusicHandler());
 		editMusic.setOnAction(new EditMusicHandler());
 		delMusic.setOnAction(new DelMusicHandler());
