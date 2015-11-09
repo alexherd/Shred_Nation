@@ -1,0 +1,47 @@
+/*Work on this*/
+.root {
+	-fx-background-color:plum;
+	-fx-focus-color:transparent;
+	-fx-faint-focus-color:transparent;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color:darkmagenta;
+}
+
+.tab-pane{
+	-fx-tab-min-width:90px;
+}
+
+.tab-pane .tab{
+	-fx-border-radius:5 5 0 0;
+	-fx-background-radius:5 5 0 0;
+	-fx-background-color:lightgrey;
+}
+
+.tab-pane .tab:selected{
+	-fx-background-color:pink;
+	-fx-border-color:red;
+}
+
+.tab .tab-label{
+	-fx-font-size:14px;
+}
+
+.tab:selected .tab-label{
+	-fx-text-fill:black;
+}
+
+.button:hover{
+	-fx-border-radius:5 5 5 5;
+	-fx-border-width:1px;
+	-fx-border-color:darkmagenta;
+	-fx-text-fill:darkmagenta;
+}
+
+.button:focused{
+	-fx-border-radius:5 5 5 5;
+	-fx-border-width:1px;
+	-fx-border-color:darkmagenta;
+	-fx-text-fill:darkmagenta;
+}

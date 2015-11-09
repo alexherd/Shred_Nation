@@ -44,6 +44,7 @@ public class Gui extends Application {
 		//Submenu Items (Style Sheets) ****NEW****
 		MenuItem itmDefault = new MenuItem("Default");
 		MenuItem itmForest = new MenuItem("Forest");
+		MenuItem itmStormcrow = new MenuItem("Stormcrow");
 		
 		//Menu3
 		Menu help = new Menu("Help");
@@ -53,7 +54,7 @@ public class Gui extends Application {
 		
 		//Add MenuItems to Menus
 		file.getItems().addAll(itmNew,itmDel,itmView,itmLogOut);
-		subCustom.getItems().addAll(itmDefault, itmForest);
+		subCustom.getItems().addAll(itmDefault, itmForest, itmStormcrow);
 		options.getItems().add(subCustom);
 		help.getItems().add(itmChanges);
 		
@@ -162,6 +163,7 @@ public class Gui extends Application {
 		//Add Event Handlers to Submenu Items ****NEW****
 		itmDefault.setOnAction(new StyleHandler(sceneMusic, 0));
 		itmForest.setOnAction(new StyleHandler(sceneMusic, 1));
+		itmStormcrow.setOnAction(new StyleHandler(sceneMusic, 2));
 		
 		//Usual Suspects
 		primaryStage.setTitle("Shred Nation");
