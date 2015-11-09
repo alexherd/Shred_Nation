@@ -18,7 +18,6 @@ public class Gui extends Application {
 	Button addMusic, editMusic, delMusic, scanMusic, rateMusic, sortMusic,
 	addProfile, delProfile, viewProfile, compProfile;
 	
-	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		//Root Node
@@ -39,8 +38,12 @@ public class Gui extends Application {
 		//Menu2
 		Menu options = new Menu("Options");
 		
-		//Menu Items
-		MenuItem itmCustom = new MenuItem("Customize");
+		//Submenu ****NEW****
+		Menu subCustom = new Menu("Customize");
+		
+		//Submenu Items (Style Sheets) ****NEW****
+		MenuItem itmDefault = new MenuItem("Default");
+		MenuItem itmForest = new MenuItem("Forest");
 		
 		//Menu3
 		Menu help = new Menu("Help");
@@ -50,7 +53,8 @@ public class Gui extends Application {
 		
 		//Add MenuItems to Menus
 		file.getItems().addAll(itmNew,itmDel,itmView,itmLogOut);
-		options.getItems().add(itmCustom);
+		subCustom.getItems().addAll(itmDefault, itmForest);
+		options.getItems().add(subCustom);
 		help.getItems().add(itmChanges);
 		
 		//Add Menus to MenuBar
@@ -151,9 +155,15 @@ public class Gui extends Application {
 		root.setTop(menuBar);
 		root.setCenter(tabPane);
 		
-		//Usual suspects
+		//Make scene
 		Scene sceneMusic = new Scene(root,600,500);
 		sceneMusic.getStylesheets().add("Shred_Style.css");
+		
+		//Add Event Handlers to Submenu Items ****NEW****
+		itmDefault.setOnAction(new StyleHandler(sceneMusic, 0));
+		itmForest.setOnAction(new StyleHandler(sceneMusic, 1));
+		
+		//Usual Suspects
 		primaryStage.setTitle("Shred Nation");
 		primaryStage.setScene(sceneMusic);
 		primaryStage.show();
@@ -188,6 +198,6 @@ public class Gui extends Application {
 * Make buttons with images in list view on right of stage
 * Cutomize icons
 * Create CSS (IN PROGRESS)
-* Add new popup menu to customize color scheme?
+* Add new popup menu to customize color scheme? (WORKING ON NOW)
 */
 
